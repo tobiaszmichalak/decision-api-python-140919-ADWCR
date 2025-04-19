@@ -14,9 +14,6 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Aplikacja będzie dostępna pod adresem:  
-http://localhost:5000
-
 Uruchomienie notebooka:
 
 ```bash
