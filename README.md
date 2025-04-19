@@ -1,5 +1,12 @@
 # decision-api-python
 
+Sklonuj repozytorium:
+
+```bash
+git clone https://github.com/tobiaszmichalak/decision-api-python-140919-ADWCR.git
+cd decision-api-python-140919-ADWCR
+```
+
 Python 3.7 lub nowszy
 
 ```bash
