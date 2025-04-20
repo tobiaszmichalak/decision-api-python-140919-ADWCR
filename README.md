@@ -1,47 +1,58 @@
-# Decision API Python
+# decision-api-python
 
-## Klonowanie i konfiguracja
 
-Sklonuj repozytorium:
-\`\`\`bash
-git clone https://github.com/tobiaszmichalak/decision-api-python-140919-ADWCR.git
+
+---
+
+## Lokalna instalacja
+
+### 1. Klonowanie repozytorium
+
+git clone https://github.com/tobiaszmichalak/decision-api-python-140919-ADWCR.git  
 cd decision-api-python-140919-ADWCR
-\`\`\`
 
-## Przygotowanie środowiska Python
+### 2. Utworzenie środowiska wirtualnego
 
-Wymagania: Python 3.7 lub nowszy.
-
-Utwórz wirtualne środowisko:
-\`\`\`bash
-python3 -m venv .venv
+python3 -m venv .venv  
 source .venv/bin/activate
-\`\`\`
 
-Zainstaluj biblioteki:
-\`\`\`bash
+### 3. Ignorowanie środowiska w GIT
+
+echo ".venv/" >> .gitignore
+
+### 4. Instalacja zależności
+
 pip install -r requirements.txt
-\`\`\`
 
-Uruchom aplikację Flask:
-\`\`\`bash
-python app.py
-\`\`\`
+### 5. Uruchomienie aplikacji
 
-Opcjonalnie uruchom notebook Jupyter:
-\`\`\`bash
+flask run
+
+---
+
+## Uruchomienie notebooka
+
+Jeśli projekt zawiera notebook:
+
 jupyter notebook Lab2.ipynb
-\`\`\`
 
-## Docker
+---
 
-Budowanie obrazu:
-\`\`\`bash
-docker build -t modelML .
-\`\`\`
+## Uruchomienie za pomocą Dockera
 
-Uruchamianie kontenera:
-\`\`\`bash
-docker run -p 5000:5000 modelML
-\`\`\`
-EOF
+### 1. Budowanie obrazu
+
+docker build -t decision-api .
+
+### 2. Uruchomienie kontenera
+
+docker run -p 5000:5000 decision-api
+
+Aplikacja będzie dostępna pod adresem: http://localhost:5000
+
+---
+
+## 🔧 Wymagania
+
+- Python 3.7+
+- Docker (opcjonalnie)
