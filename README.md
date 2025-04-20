@@ -52,7 +52,7 @@ Aplikacja będzie dostępna pod adresem: http://localhost:5000
 
 ---
 
-## 🔧 Wymagania
+## Wymagania
 
 - Python 3.7+
 - Docker (opcjonalnie)
